@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".publish">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/publish_cancle"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/space"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/publish_title"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_tap"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_height="50dp"
+            android:hint="@string/publish_taphint"/>
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_desc"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:autofillHints="@string/space"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="@string/publish_descinput"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:textSize="14.67sp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_photo"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="152dp"
+            android:layout_height="156dp"
+            android:background="@drawable/border_out"
+            android:contentDescription="@string/image"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_price"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/space"
+                android:inputType="textMultiLine"
+                android:background="@drawable/border_gray"
+                android:hint="@string/space"/>
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:text="@string/publish_pricetb" />
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="@string/space"
+                android:inputType="textMultiLine"
+                android:background="@drawable/border_gray"
+                android:hint="@string/space"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/publish_location"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

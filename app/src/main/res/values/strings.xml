@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">TJPY</string>
+    <string name="title_home">大厅</string>
+    <string name="title_dashboard">仲裁</string>
+    <string name="title_notifications">订单</string>
+    <string name="title_mine">我的</string>
+
+    <string name="plusicon">+</string>
+    <string name="renttitle">标题描述</string>
+    <string name="price">租赁价格</string>
+    <string name="image">物品图片</string>
+    <string name="put">发 布</string>
+    <string name="renttitle1">[ 嘉定校区 ] NBA篮球，七成新，提供打气服务</string>
+    <string name="renttitle2">[ 四平路校区 ] 苹果MAC笔记本，装有office、Adobe等常用工具</string>
+    <string name="renttitle3">[ 四平路校区 ] Giant TCR6700公路自行车，轮胎已打满气</string>
+    <string name="renttitle4">[ 嘉定校区 ] 同济版高等数学上册+习题详解 内含个人学习笔记</string>
+    <string name="price1">0.2 T币 / 5h</string>
+    <string name="price2">1 T币 / 天</string>
+    <string name="price3">0.5 T币 / 10h</string>
+    <string name="price4">0.1 T币 / 天</string>
+    <string name="credit_best">用户信用等级&#160;&#160;&#160;极好</string>
+    <string name="credit_good">用户信用等级&#160;&#160;&#160;良好</string>
+
+
+    <string name="tocheck_title">&#160;&#160;&#160;&#160;&#160;原帖</string>
+    <string name="tocheck_issue">&#160;&#160;&#160;&#160;&#160;仲裁原由</string>
+    <string name="tocheck_photo">&#160;&#160;&#160;&#160;&#160;照片取证</string>
+    <string name="tocheck_aicheck">&#160;&#160;&#160;AI判决&#160;违约可能性：86%</string>
+    <string name="tocheck_result">&#160;&#160;&#160;&#160;&#160;是否构成违约？</string>
+    <string name="tocheck_yes">是</string>
+    <string name="tocheck_no">否</string>
+    <string name="space">&#160;</string>
+    <string name="tocheck_id1">Ivy</string>
+    <string name="tocheck_origin1">[ 四平路校区 ]&#160;苹果MAC笔记本，装有office、Adobe等常用工具\n&#160;&#160;1 T币 / 天\n&#160;&#160;用户信用等级：一般</string>
+    <string name="tocheck_issue1">\n&#160;&#160;&#160;笔记本外壳有明显刮花\n</string>
+
+
+    <string name="order1">2020 年 3 月 5 日</string>
+    <string name="order2">2020 年 3 月 6 日</string>
+    <string name="order_out">租赁中</string>
+    <string name="timesurplus">剩余时间&#160;：&#160;5&#160;d&#160;10&#160;h</string>
+    <string name="timesurplus2">剩余时间&#160;：&#160;0&#160;d&#160;5&#160;h</string>
+    <string name="pubkey">产品公钥：TJP5vUxrB86MNoRtLYYQHY3Uxuzc44dyz2GDrKZhYWBe2WEMfSzCX</string>
+    <string name="pubkey2">产品公钥：TJPbf0cc2e837e3f0ed3392c86a5afa3149ce70dda098ad278dee</string>
+
+    <string name="hash">校验码 ： \n2af9ef9aaa6d32873e51431d5cdd3dfb</string>
+    <string name="name"> Mer.</string>
+    <string name="setting">&#160;&#160;设置</string>
+    <string name="star">&#160;&#160;收藏</string>
+    <string name="wallet">&#160;&#160;钱包</string>
+    <string name="version">demo v0.1.1</string>
+
+    <string name="publish_title">发布</string>
+    <string name="publish_cancle">取消</string>
+    <string name="publish_location">选择校区</string>
+    <string name="publish_desc">物品描述</string>
+    <string name="publish_descinput">在此输入物品描述</string>
+
+    <string name="publish_tap">输入物品标签#</string>
+    <string name="publish_taphint">#自行车 #书本 #电脑 #充电宝……</string>
+    <string name="publish_photo">物品图片</string>
+    <string name="publish_price">可选择方案</string>
+    <string name="publish_pricetb">T币 /</string>
+    <string name="publish_day">天</string>
+    <string name="publish_hour">小时</string>
+    <string name="publish_location1">四平路校区</string>
+    <string name="publish_location2">嘉定校区</string>
+    <string name="publish_location3">沪北校区</string>
+    <string name="publish_location4">沪西校区</string>
+
+    <string name="key_onstain">------物品已上链-----------------------------</string>
+    <string name="key_time">时间戳：\n2020-03-12 10:26:31</string>
+    <string name="key_prikey">商品私钥：\nMIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEA46bVz2HBmpthBdu4
+bNufvE4v3DiA3/wYv1wGjJhDaAdh5P29EfT/xEjj/Xpjoo2cqZ5qQe6+ncNucRm8</string>
+    <string name="key_pubkey">商品公钥：\nMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAOOm1c9hwZqbYQXbuGzbn7xOL9w4gN/8
+GL9cBoyYQ2gHYeT9vRH0/8RI4/16Y6KNnKmeakHuvp3DbnEZvLyJGjkCAwEAAQ==</string>
+    <string name="key_warning">请妥善保管私钥！！！</string>
+    <string name="key_confirm">确&#160;&#160;定</string>
+</resources>
