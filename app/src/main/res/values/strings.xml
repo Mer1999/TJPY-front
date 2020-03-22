@@ -5,6 +5,7 @@
     <string name="title_notifications">订单</string>
     <string name="title_mine">我的</string>
 
+    <string name="Working">施工中</string>
     <string name="plusicon">+</string>
     <string name="renttitle">标题描述</string>
     <string name="price">租赁价格</string>
@@ -18,8 +19,8 @@
     <string name="price2">1 T币 / 天</string>
     <string name="price3">0.5 T币 / 10h</string>
     <string name="price4">0.1 T币 / 天</string>
-    <string name="credit_best">用户信用等级&#160;&#160;&#160;极好</string>
-    <string name="credit_good">用户信用等级&#160;&#160;&#160;良好</string>
+    <string name="credit_best">用户信用等级&#160;|&#160;极好</string>
+    <string name="credit_good">用户信用等级&#160;|&#160;良好</string>
 
 
     <string name="tocheck_title">&#160;&#160;&#160;&#160;&#160;原帖</string>
@@ -48,7 +49,8 @@
     <string name="setting">&#160;&#160;设置</string>
     <string name="star">&#160;&#160;收藏</string>
     <string name="wallet">&#160;&#160;钱包</string>
-    <string name="version">demo v0.1.1</string>
+    <string name="signin">&#160;&#160;登录&#160;/&#160;注册</string>
+    <string name="version">demo v0.1.2</string>
 
     <string name="publish_title">发布</string>
     <string name="publish_cancle">取消</string>
@@ -68,12 +70,29 @@
     <string name="publish_location3">沪北校区</string>
     <string name="publish_location4">沪西校区</string>
 
-    <string name="key_onstain">------物品已上链-----------------------------</string>
+    <string name="key_onstain">物品已上链</string>
     <string name="key_time">时间戳：\n2020-03-12 10:26:31</string>
-    <string name="key_prikey">商品私钥：\nMIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEA46bVz2HBmpthBdu4
-bNufvE4v3DiA3/wYv1wGjJhDaAdh5P29EfT/xEjj/Xpjoo2cqZ5qQe6+ncNucRm8</string>
-    <string name="key_pubkey">商品公钥：\nMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAOOm1c9hwZqbYQXbuGzbn7xOL9w4gN/8
-GL9cBoyYQ2gHYeT9vRH0/8RI4/16Y6KNnKmeakHuvp3DbnEZvLyJGjkCAwEAAQ==</string>
+    <string name="key_prikey">商品私钥：\nMIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEA46bVz2HBmpthBdu4bNufvE4v3DiA3/wYv1wGjJhDaAdh5P29EfT/xEjj/Xpjoo2cqZ5qQe6+ncNucRm8</string>
+    <string name="key_pubkey">商品公钥：\nMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAOOm1c9hwZqbYQXbuGzbn7xOL9w4gN/8GL9cBoyYQ2gHYeT9vRH0/8RI4/16Y6KNnKmeakHuvp3DbnEZvLyJGjkCAwEAAQ==</string>
     <string name="key_warning">请妥善保管私钥！！！</string>
     <string name="key_confirm">确&#160;&#160;定</string>
+
+    <string name="login_username">用户名</string>
+    <string name="login_usernamehint">请输入邮箱/手机号</string>
+    <string name="login_password">密码</string>
+    <string name="login_passwordhint">输入密码</string>
+    <string name="login_pubkey">公钥</string>
+    <string name="login_pubkeyhint">注册时不需要输入此项</string>
+    <string name="login_signin">注册</string>
+    <string name="login_login">登录</string>
+
+    <string name="signinsuccess_title">注册成功</string>
+    <string name="signinsuccess_prikey">私钥：\npjoo2cqZ5qQe6+ncMIIBVQIBADANBgkqJhDaAdh5P29EfT/xEjj/XhkiG9w0BAQEFAASCAT8wggE7AgEAAkEA46bVz2HBmpthBdu4bNufvE4v3DiA3/wYv1wGjNucRm8</string>
+    <string name="signinsuccess_pubkey">公钥：\nAvRH0/8RI4/16Y6KNnKmeakHuvp3MFwwDQYJKoZIhvcNAQEBBQADSwAwSDbnEZvLyJGjkCAwEAAQ==JBAOOm1c9hwZqbYQXbuGzbn7xOL9w4gN/8GL9cBoyYQ2gHYeT9</string>
+
+    <string name="subject_username">Mer.</string>
+    <string name="subject_tag">#篮球#嘉定校区</string>
+    <string name="subject_iwanna">我想租</string>
+    <string name="subject_backbtn">\n←&#160;</string>
+
 </resources>

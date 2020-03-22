@@ -16,13 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="150dp"
-            android:layout_height="200dp"
-            android:contentDescription="@string/image"
-            android:src="@mipmap/miku"
-            app:srcCompat="@mipmap/miku" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,10 +31,11 @@
             <TextView
                 android:id="@+id/textView21"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:text="@string/name"
                 android:textColor="#000000"
-
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
                 android:textSize="30sp" />
 
             <TextView
@@ -48,11 +43,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="@string/hash"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:paddingLeft="20dp" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -63,6 +61,28 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image"
+                app:srcCompat="@drawable/ic_stat_signin" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/signin"
+                android:textColor="#191970"
+                android:textSize="20sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -136,7 +156,7 @@
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="176dp"
         android:text="@string/version"
         app:layout_constraintEnd_toEndOf="parent"

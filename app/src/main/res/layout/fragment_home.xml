@@ -7,6 +7,7 @@
     android:background="#f5f5f5"
     android:padding="10dp">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,83 +19,113 @@
             android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.cardview.widget.CardView
+                android:layout_width="192dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/border_out"
-                android:orientation="vertical">
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="11dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
 
-                <ImageView
-                    android:id="@+id/imageView"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:background="@drawable/border"
-                    android:contentDescription="@string/image"
-                    app:srcCompat="@mipmap/basketball" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="83dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/renttitle1" />
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:contentDescription="@string/image"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@mipmap/basketball" />
 
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:text="@string/credit_best" />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:text="@string/renttitle1"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/price1" />
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#ff0000"
+                        android:text="@string/price1"/>
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:text="@string/credit_best"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#4682b4" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="192dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/border_out"
-                android:orientation="vertical">
+                android:layout_marginBottom="11dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
 
-                <ImageView
-                    android:id="@+id/imageView2"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:background="@drawable/border"
-                    android:contentDescription="@string/image"
-                    app:srcCompat="@mipmap/computer" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="83dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/renttitle2" />
-                <TextView
-                    android:id="@+id/textView28"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:text="@string/credit_good" />
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/price2" />
 
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:contentDescription="@string/image"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@mipmap/computer" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:text="@string/renttitle2"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#ff0000"
+                        android:text="@string/price2" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:text="@string/credit_good"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#4682b4"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
@@ -104,155 +135,115 @@
             android:baselineAligned="false"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="0dp"
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="11dp"
+
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/image"
+                        app:srcCompat="@mipmap/bike" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:text="@string/renttitle3"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:text="@string/price3"
+                        android:layout_height="35dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#ff0000" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:text="@string/credit_best"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#4682b4" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="192dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/border_out"
-                android:orientation="vertical">
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="11dp"
+                app:cardElevation="5dp">
 
-                <ImageView
-                    android:id="@+id/imageView3"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:background="@drawable/border"
-                    android:contentDescription="@string/image"
-                    app:srcCompat="@mipmap/bike" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="83dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/renttitle3" />
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:text="@string/credit_best" />
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/price3" />
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/image"
+                        app:srcCompat="@mipmap/book" />
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:text="@string/renttitle4"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/border_out"
-                android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:text="@string/price4"
+                        android:layout_height="35dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#ff0000" />
 
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:background="@drawable/border"
-                    android:contentDescription="@string/image"
-                    app:srcCompat="@mipmap/book" />
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:text="@string/credit_best"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:textColor="#4682b4" />
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="83dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/renttitle4" />
-                <TextView
-                    android:id="@+id/textView30"
-                    android:layout_width="match_parent"
-                    android:textColor="#000000"
-                    android:layout_height="wrap_content"
-                    android:text="@string/credit_best" />
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:textColor="#000000"
-                    android:background="@drawable/border"
-                    android:text="@string/price4" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/border_out"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:background="@drawable/border"
-                    android:contentDescription="@string/image"
-                    android:src="@android:drawable/ic_menu_gallery" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="83dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/renttitle" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/price" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/border_out"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="210dp"
-                    android:background="@drawable/border"
-                    android:contentDescription="@string/image"
-                    android:src="@android:drawable/ic_menu_gallery" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="83dp"
-                    android:background="@drawable/border"
-                    android:textColor="#000000"
-                    android:text="@string/renttitle" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:textColor="#000000"
-                    android:background="@drawable/border"
-                    android:text="@string/price" />
-
-            </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 

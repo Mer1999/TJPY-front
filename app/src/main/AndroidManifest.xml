@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".key"></activity>
+        <activity android:name=".rent"></activity>
+        <activity android:name=".signinsuccess" />
+        <activity android:name=".login" />
+        <activity android:name=".subjectview" />
+        <activity android:name=".key" />
         <activity android:name=".publish" />
         <activity
             android:name=".MainActivity"

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        //发布_切换页面
+        //切换发布页面
         Button btn=findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -40,6 +40,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //切换登录注册页面
+        Button btn2=findViewById(R.id.button5);
+        btn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i=new Intent(MainActivity.this,login.class);
+                startActivity(i);
+            }
+        });
+
+        //切换物品租赁页面
+        Button btn3=findViewById(R.id.button8);
+        btn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i=new Intent(MainActivity.this,subjectview.class);
+                startActivity(i);
+            }
+        });
 
     }
 
