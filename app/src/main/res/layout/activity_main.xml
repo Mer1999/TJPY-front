@@ -31,13 +31,24 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="383dp"
-        android:layout_height="90dp"
+        android:layout_width="382dp"
+        android:layout_height="66dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="216dp"
         android:background="@android:color/transparent"
         android:text="@string/space"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="372dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="292dp"
+        android:text="@string/space"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

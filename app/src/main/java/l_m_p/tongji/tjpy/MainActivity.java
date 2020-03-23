@@ -60,6 +60,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //切换物品租赁页面
+        Button btn4=findViewById(R.id.button14);
+        btn4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i=new Intent(MainActivity.this,picsim.class);
+                startActivity(i);
+            }
+        });
+
     }
 
 

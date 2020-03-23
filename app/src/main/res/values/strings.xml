@@ -38,11 +38,14 @@
 
     <string name="order1">2020 年 3 月 5 日</string>
     <string name="order2">2020 年 3 月 6 日</string>
-    <string name="order_out">租赁中</string>
+    <string name="order_out">订单中心</string>
+    <string name="order_renting">租赁中</string>
+    <string name="order_rentover">已归还</string>
     <string name="timesurplus">剩余时间&#160;：&#160;5&#160;d&#160;10&#160;h</string>
-    <string name="timesurplus2">剩余时间&#160;：&#160;0&#160;d&#160;5&#160;h</string>
+    <string name="timesurplus2">剩余时间&#160;：已归还</string>
     <string name="pubkey">产品公钥：TJP5vUxrB86MNoRtLYYQHY3Uxuzc44dyz2GDrKZhYWBe2WEMfSzCX</string>
     <string name="pubkey2">产品公钥：TJPbf0cc2e837e3f0ed3392c86a5afa3149ce70dda098ad278dee</string>
+    <string name="order_return">我要归还</string>
 
     <string name="hash">校验码 ： \n2af9ef9aaa6d32873e51431d5cdd3dfb</string>
     <string name="name"> Mer.</string>
@@ -71,7 +74,7 @@
     <string name="publish_location4">沪西校区</string>
 
     <string name="key_onstain">物品已上链</string>
-    <string name="key_time">时间戳：\n2020-03-12 10:26:31</string>
+    <string name="key_time">时间戳：\n2020&#8211;03&#8211;12 10:26:31</string>
     <string name="key_prikey">商品私钥：\nMIIBVQIBADANBgkqhkiG9w0BAQEFAASCAT8wggE7AgEAAkEA46bVz2HBmpthBdu4bNufvE4v3DiA3/wYv1wGjJhDaAdh5P29EfT/xEjj/Xpjoo2cqZ5qQe6+ncNucRm8</string>
     <string name="key_pubkey">商品公钥：\nMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAOOm1c9hwZqbYQXbuGzbn7xOL9w4gN/8GL9cBoyYQ2gHYeT9vRH0/8RI4/16Y6KNnKmeakHuvp3DbnEZvLyJGjkCAwEAAQ==</string>
     <string name="key_warning">请妥善保管私钥！！！</string>
@@ -93,6 +96,23 @@
     <string name="subject_username">Mer.</string>
     <string name="subject_tag">#篮球#嘉定校区</string>
     <string name="subject_iwanna">我想租</string>
-    <string name="subject_backbtn">\n←&#160;</string>
+    <string name="subject_backbtn">&#060;</string>
+
+    <string name="rent_checkcredit">用户当前信用等级&#160;：&#160;极好</string>
+    <string name="rent_requirecredit">租赁所需最低信用等级&#160;：&#160;良好</string>
+    <string name="rent_checkwallet">用户当前钱包余额&#160;：&#160;3T币</string>
+    <string name="rent_requirewallet">租赁最低花费&#160;：&#160;0.2T币</string>
+    <string name="rent_checkok">满足要求✔</string>
+    <string name="rent_checktitle">信用&#160;&#160;钱包余额确认</string>
+    <string name="rent_confirm">我已确认,进入订单界面</string>
+
+    <string name="order_title">确认订单</string>
+    <string name="order_self">信息确认</string>
+    <string name="order_name">昵称&#160;：&#160;Mer.</string>
+    <string name="order_phone">联系方式&#160;：&#160;177114514</string>
+    <string name="order_school">所在校区&#160;：&#160;嘉定校区</string>
+    <string name="order_time">租赁时间&#160;：&#160;5h</string>
+    <string name="order_price">实付款：&#160;0.2T币</string>
+    <string name="order_confirm">确认支付</string>
 
 </resources>

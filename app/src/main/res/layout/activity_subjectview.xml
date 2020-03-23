@@ -29,6 +29,7 @@
                     android:background="@android:color/transparent"
                     android:gravity="center"
                     android:text="@string/subject_backbtn"
+                    android:textSize="30sp"
                     android:textStyle="bold" />
 
                 <TextView
