@@ -6,8 +6,8 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="14"
-8-->D:\AndroidProjects\TJPY\openCVLibrary349\src\main\AndroidManifest.xml
+8-->Z:\Project\AndroidProject\TJPY2\TJPY\openCVLibrary349\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->D:\AndroidProjects\TJPY\openCVLibrary349\src\main\AndroidManifest.xml
+9-->Z:\Project\AndroidProject\TJPY2\TJPY\openCVLibrary349\src\main\AndroidManifest.xml
 10
 11</manifest>

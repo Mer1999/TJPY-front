@@ -58,6 +58,16 @@ public class picsim extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picsim);
 
+        //取消键--切换到主界面
+        Button btn=findViewById(R.id.button7);
+        btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i=new Intent(picsim.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
+
         ivPhoto = findViewById(R.id.ivPhoto);
 
         ivPhoto.setOnClickListener(new View.OnClickListener() {

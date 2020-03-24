@@ -94,6 +94,17 @@ public class sim extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sim);
+
+        //下一步键--切换到订单结束页面
+        Button btn=findViewById(R.id.next);
+        btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i=new Intent(sim.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
+
         Intent intent=getIntent();
         String imgUri = intent.getStringExtra("imageUri");
 //        Toast.makeText(SimActivity.this,imgUri,Toast.LENGTH_SHORT).show();

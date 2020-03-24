@@ -115,4 +115,11 @@
     <string name="order_price">实付款：&#160;0.2T币</string>
     <string name="order_confirm">确认支付</string>
 
+    <string name="picsim_next">下一步</string>
+    <string name="picsim_photo">拍摄物品照片</string>
+    <string name="picsim_similarity">Similarity</string>
+    <string name="picsim_before">BEFORE</string>
+    <string name="picsim_after">AFTER</string>
+    <string name="picsim_next">下一步</string>
+
 </resources>

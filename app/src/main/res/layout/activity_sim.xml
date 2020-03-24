@@ -6,50 +6,79 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_gravity="left|top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_widthPercent="50%"
         app:layout_heightPercent="50%">
+
         <ImageView
             android:id="@+id/photo_1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image" />
+
         <TextView
             android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_below="@id/photo_1"
             android:gravity="center"
-            android:text="BEFORE"/>
+            android:text="@string/picsim_before" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_gravity="right|top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_widthPercent="50%"
         app:layout_heightPercent="50%">
+
         <ImageView
             android:id="@+id/photo_2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image" />
+
         <TextView
             android:id="@+id/text2"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_below="@id/photo_2"
             android:gravity="center"
-            android:text="After"/>
+            android:text="@string/picsim_after" />
     </RelativeLayout>
+
     <Button
         android:id="@+id/cal"
-        android:layout_gravity="center"
-        app:layout_widthPercent="100%"
+        android:layout_gravity="center|left"
+        android:text="@string/picsim_similarity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_heightPercent="8%"
-        android:text="Similarity"/>
+        app:layout_widthPercent="50%" />
+    <Button
+        android:id="@+id/next"
+        android:layout_gravity="center|right"
+        android:text="@string/picsim_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="50%" />
+
     <ImageView
         android:id="@+id/photo_3"
         android:layout_gravity="left|bottom"
-        app:layout_widthPercent="50%"
-        app:layout_heightPercent="45%"/>
+        android:contentDescription="@string/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="45%"
+        app:layout_widthPercent="50%" />
+
     <ImageView
         android:id="@+id/photo_4"
         android:layout_gravity="right|bottom"
-        app:layout_widthPercent="50%"
-        app:layout_heightPercent="45%"/>
+        android:contentDescription="@string/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="45%"
+        app:layout_widthPercent="50%" />
 </androidx.percentlayout.widget.PercentFrameLayout>

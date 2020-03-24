@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="下一步"
+                android:text="@string/picsim_next"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -53,16 +53,17 @@
             android:id="@+id/textView42"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/publish_photo"
+            android:text="@string/picsim_photo"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
         <ImageView
             android:id="@+id/ivPhoto"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:background="@android:color/black"
             android:src="@drawable/ic_photo_camera"
-            android:layout_centerInParent="true"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"/>
 
         </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
