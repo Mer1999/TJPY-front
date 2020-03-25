@@ -69,8 +69,8 @@ public class picsim extends AppCompatActivity {
         });
 
         ivPhoto = findViewById(R.id.ivPhoto);
-
-        ivPhoto.setOnClickListener(new View.OnClickListener() {
+        ivCamera = findViewById(R.id.ivCamera);
+        ivCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 checkPermissionAndCamera();

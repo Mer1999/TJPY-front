@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#f5f5f5"
+    android:scrollbars="none"
     android:padding="10dp">
 
 
@@ -20,8 +21,9 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="192dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:layout_marginRight="11dp"
                 android:layout_marginBottom="11dp"
                 app:cardCornerRadius="10dp"
@@ -43,12 +45,18 @@
                     <TextView
                         android:id="@+id/textView"
                         android:layout_width="match_parent"
-                        android:layout_height="83dp"
+                        android:layout_height="70dp"
                         android:text="@string/renttitle1"
                         android:textSize="16sp"
                         android:padding="5dp"
                         android:textColor="#000000" />
-
+                    <TextView
+                        android:id="@+id/item_if_rent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="待租"
+                        android:textColor="#4682b4"/>
                     <TextView
                         android:id="@+id/textView27"
                         android:layout_width="match_parent"
@@ -73,8 +81,9 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="192dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:layout_marginBottom="11dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp">
@@ -97,12 +106,17 @@
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
-                        android:layout_height="83dp"
+                        android:layout_height="70dp"
                         android:text="@string/renttitle2"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:padding="5dp"/>
-
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="已租"
+                        android:textColor="#FF0000"/>
                     <TextView
                         android:id="@+id/textView28"
                         android:layout_width="match_parent"
@@ -138,8 +152,9 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="192dp"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:layout_marginRight="11dp"
                 android:layout_marginBottom="11dp"
 
@@ -169,7 +184,12 @@
                         android:textSize="16sp"
                         android:padding="5dp"
                         android:textColor="#000000" />
-
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="待租"
+                        android:textColor="#4682b4"/>
                     <TextView
                         android:id="@+id/textView29"
                         android:layout_width="match_parent"
@@ -194,8 +214,9 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="192dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 app:cardCornerRadius="10dp"
                 android:layout_marginBottom="11dp"
                 app:cardElevation="5dp">
@@ -222,7 +243,12 @@
                         android:textSize="16sp"
                         android:padding="5dp"
                         android:textColor="#000000" />
-
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="待租"
+                        android:textColor="#4682b4"/>
                     <TextView
                         android:id="@+id/textView30"
                         android:layout_width="match_parent"

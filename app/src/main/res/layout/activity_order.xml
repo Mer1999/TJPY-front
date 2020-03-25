@@ -7,8 +7,8 @@
     tools:context=".order">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -36,8 +36,8 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:contentDescription="@string/image"
                     app:srcCompat="@mipmap/basketball" />
 
@@ -51,8 +51,8 @@
                         android:id="@+id/textView67"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:textSize="20sp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"
                         android:textColor="#000000"
                         android:text="@string/renttitle1" />
 
@@ -60,12 +60,12 @@
                         android:id="@+id/textView68"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="10dp"
+                        android:layout_margin="5dp"
                         android:textColor="#ff0000"
-                        android:textSize="25sp"
+                        android:textSize="15sp"
                         android:textStyle="bold"
                         android:gravity="center_vertical"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:text="@string/price1" />
                 </LinearLayout>
 
@@ -89,46 +89,175 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:padding="5dp"
                     android:textStyle="bold"
-                    android:text="@string/order_self" />
-
-                <TextView
-                    android:id="@+id/textView71"
-                    android:layout_width="wrap_content"
+                    android:text="物主信息" />
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/order_name"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:padding="5dp"/>
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="昵称："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="szg"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="公钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="8X37tx2yq1TMDDZbwZmha6AAuEKM9Yyj4auyU3cgwp12kptEgU"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="联系方式："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="18018591988"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="所在校区："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="嘉定校区"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView72"
+                    android:id="@+id/textView70"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:padding="5dp"
-                    android:text="@string/order_phone" />
-
-                <TextView
-                    android:id="@+id/textView73"
+                    android:textStyle="bold"
+                    android:text="物品信息" />
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:padding="5dp"
-                    android:text="@string/order_school" />
-
-                <TextView
-                    android:id="@+id/textView74"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="公钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="TJP5vUxrB86MNoRtLYYQHY3Uxuzc44dyz2GDrKZhYWBe2WEMfSzCX"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:padding="5dp"
-                    android:text="@string/order_time" />
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="时间戳："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/order_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text=""/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="位置："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="嘉定校区友园20号楼"/>
+                </LinearLayout>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -146,7 +275,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:padding="5dp"
                 android:textStyle="bold"
                 android:layout_weight="1"

@@ -2,105 +2,204 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#f5f5f5"
+    android:scrollbars="none"
     android:padding="10dp">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_out"
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="11dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView30"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="#696969"
-            android:text="@string/tocheck_title" />
+            android:text="原贴" />
 
-        <LinearLayout
-            android:layout_height="100dp"
-            android:layout_width="360dp"
-            android:background="@drawable/border_gray"
-            android:layout_gravity="center_horizontal"
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#efedfc"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView13"
+                android:layout_margin="5dp"
                 android:layout_width="100dp"
-                android:layout_height="match_parent"
+                android:layout_height="100dp"
                 android:contentDescription="@string/image"
                 app:srcCompat="@mipmap/computer" />
-
-            <TextView
-                android:id="@+id/textView28"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="15sp"
-                android:textColor="#000000"
-                android:text="@string/tocheck_origin1" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="@string/renttitle2" />
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#ff0000"
+                    android:text="@string/price2" />
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#4682b4"
+                    android:text="@string/credit_good" />
+            </LinearLayout>
 
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
         <TextView
             android:id="@+id/textView31"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="#696969"
-            android:text="@string/tocheck_issue" />
-
-        <TextView
-            android:id="@+id/textView29"
+            android:layout_margin="5dp"
+            android:text="众裁理由" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="360dp"
-            android:layout_gravity="center_horizontal"
-            android:textSize="15sp"
-            android:textColor="#000000"
-            android:background="@drawable/border_gray"
-            android:text="@string/tocheck_issue1" />
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#efedfc"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/tocheck_issue1"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
         <TextView
             android:id="@+id/textView34"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:textStyle="bold"
             android:textSize="18sp"
+            android:layout_margin="5dp"
             android:textColor="#696969"
-            android:text="@string/tocheck_photo" />
-
-        <TextView
-            android:id="@+id/textView35"
+            android:text="照片取证" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="360dp"
-            android:layout_gravity="center_horizontal"
-            android:textSize="15sp"
-            android:textColor="#000000"
-            android:background="@drawable/border_gray"
-            android:text="@string/tocheck_aicheck" />
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#efedfc"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+
+                    android:textColor="#000000"
+                    android:layout_margin="5dp"
+                    android:text="违约可能性:" />
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#ff0000"
+                    android:layout_margin="5dp"
+                    android:text="60.6%" />
+            </LinearLayout>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="查看图片"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
         <TextView
             android:id="@+id/textView32"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="#696969"
-            android:text="@string/tocheck_result" />
+            android:layout_margin="5dp"
+            android:text="是否构成违约" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
 
-            <TextView
+            <Button
                 android:id="@+id/textView13"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/border_tocheck_result"
-                android:gravity="center_horizontal"
+                android:layout_weight="0.5"
                 android:text="@string/tocheck_yes" />
 
             <TextView
@@ -109,19 +208,226 @@
                 android:layout_height="wrap_content"
                 android:text="@string/space" />
 
-            <TextView
+            <Button
                 android:id="@+id/textView14"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/border_tocheck_result2"
-                android:gravity="center_horizontal"
+                android:layout_weight="0.5"
                 android:text="@string/tocheck_no" />
 
         </LinearLayout>
 
     </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="11dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#696969"
+                android:text="原贴" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#efedfc"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_margin="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="@string/image"
+                        app:srcCompat="@mipmap/bike" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            android:text="@string/renttitle3" />
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:textSize="15sp"
+                            android:textColor="#ff0000"
+                            android:text="@string/price3" />
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:textSize="15sp"
+                            android:textColor="#4682b4"
+                            android:text="@string/credit_best" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#696969"
+                android:layout_margin="5dp"
+                android:text="众裁理由" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#efedfc"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="前胎没气了"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:textColor="#696969"
+                android:text="照片取证" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#efedfc"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+
+                            android:textColor="#000000"
+                            android:layout_margin="5dp"
+                            android:text="违约可能性:" />
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#ff0000"
+                            android:layout_margin="5dp"
+                            android:text="15.3%" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="查看图片"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
 
+
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#696969"
+                android:layout_margin="5dp"
+                android:text="是否构成违约" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tocheck_yes" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/space" />
+
+                <Button
+                    android:id="@+id/textView14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/tocheck_no" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 </ScrollView>

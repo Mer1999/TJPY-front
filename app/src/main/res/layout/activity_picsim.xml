@@ -7,8 +7,8 @@
     tools:context=".publish">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -48,22 +48,29 @@
                 android:textSize="20sp" />
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView42"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/picsim_photo"
-            android:textColor="#000000"
-            android:textSize="30sp" />
-        <ImageView
-            android:id="@+id/ivPhoto"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@android:color/black"
-            android:src="@drawable/ic_photo_camera"
-            android:layout_gravity="center"
-            android:layout_marginTop="200dp"/>
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/picsim_photo"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@android:color/black"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
 
         </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

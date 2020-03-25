@@ -7,8 +7,8 @@
     tools:context=".publish">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -57,7 +57,7 @@
             android:textColor="#000000"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/textView52"
             android:layout_width="match_parent"
             android:background="@drawable/border"
@@ -99,6 +99,7 @@
             android:id="@+id/ivPhoto"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:scaleType="center"
             android:background="@android:color/black"
             android:src="@drawable/ic_photo_camera"
             android:layout_centerInParent="true"/>
@@ -148,6 +149,8 @@
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
                 android:text="@string/publish_pricetb" />
             <EditText
                 android:id="@+id/editText3"

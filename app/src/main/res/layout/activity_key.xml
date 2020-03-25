@@ -7,73 +7,135 @@
     tools:context=".key">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="#f8f8f8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <TextView
-            android:id="@+id/textView39"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="5dp"
+            android:text="物品注册成功"
             android:textColor="#000000"
-            android:text="@string/key_onstain" />
-        <TextView
-            android:id="@+id/textView55"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/space" />
-        <TextView
-            android:id="@+id/textView47"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:text="@string/key_time" />
-        <TextView
-            android:id="@+id/textView52"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/space" />
-        <TextView
-            android:id="@+id/textView49"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:text="@string/key_pubkey" />
-        <TextView
-            android:id="@+id/textView53"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/space" />
-        <TextView
-            android:id="@+id/textView50"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:text="@string/key_prikey" />
-        <TextView
-            android:id="@+id/textView54"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/space" />
-        <TextView
-            android:id="@+id/textView51"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#ff0000"
-            android:textSize="20sp"
             android:gravity="center"
-            android:text="@string/key_warning" />
+            android:textSize="20sp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView91"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="物品信息" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="公钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="84fMpCgGtTt7vRKDQiPRiJeuz7wmBm43nPNKe4kKq6tyWzYUtB"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="私钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="5K6SLArjAu4ghUr87iwLCEg5FhLSV7qDpCM9tXocMRvieAoPVvP"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="时间戳："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/item_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text=""/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="图片哈希："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="6LdrJivqhqbQafmwxzeuVJEJgksZfzs7AiK6crhvYSU5Ttn7iS"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:text="请妥善保管私钥！"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:layout_gravity="center"
             android:textColor="#000000"
             android:text="@string/key_confirm" />
     </LinearLayout>
