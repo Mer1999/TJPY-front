@@ -23,7 +23,7 @@
             android:id="@+id/photo_1"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:scaleType="center"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/image" />
 
 
@@ -46,7 +46,7 @@
             android:id="@+id/photo_2"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:scaleType="center"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/image" />
 
 

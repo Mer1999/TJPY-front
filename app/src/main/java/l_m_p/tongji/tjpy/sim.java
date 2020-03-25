@@ -123,7 +123,7 @@ public class sim extends AppCompatActivity {
             mCameraImagePath=imgUri;
             photo2.setImageBitmap(BitmapFactory.decodeFile(mCameraImagePath));
         }
-        String url = "http://tjlzt98.cn/basketball.png";
+        String url = "http://tjlzt98.cn/mouse.jpg";
 //        photo1.setDrawingCacheEnabled(true);
 //        photo2.setDrawingCacheEnabled(true);
 //        Glide.with(this).load(url).into(photo1);

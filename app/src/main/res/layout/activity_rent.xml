@@ -16,11 +16,13 @@
             android:id="@+id/textView65"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rent_checktitle"
+            android:text="资格认证"
+            android:gravity="center"
             android:textStyle="bold"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:textSize="20sp"
             android:textColor="#d2691e"/>
 
         <LinearLayout
@@ -36,14 +38,14 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:text="@string/rent_checkcredit"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/textView61"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#3cb371"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:text="@string/rent_checkok" />
 
         </LinearLayout>
@@ -56,7 +58,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/textView64"
@@ -78,14 +80,14 @@
                 android:text="@string/rent_checkwallet"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/textView62"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:textColor="#3cb371"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:text="@string/rent_checkok" />
 
         </LinearLayout>
@@ -98,7 +100,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/button11"

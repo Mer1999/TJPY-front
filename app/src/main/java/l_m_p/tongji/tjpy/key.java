@@ -19,8 +19,8 @@ public class key extends AppCompatActivity {
         Intent intent =getIntent();
         String msg=intent.getStringExtra("location");
         locationText=(TextView)findViewById(R.id.item_location);
-        dateText=(TextView)findViewById(R.id.item_date);
         locationText.setText(msg);
+        dateText=(TextView)findViewById(R.id.item_date);
         dateText.setText(""+System.currentTimeMillis());
         Button btn=findViewById(R.id.button4);
         btn.setOnClickListener(new View.OnClickListener(){

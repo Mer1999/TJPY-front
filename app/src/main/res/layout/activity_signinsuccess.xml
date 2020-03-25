@@ -59,7 +59,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.75"
-                        android:text="7tNjnqN8tngaBnJRsdKXbBcKDV1tVCFgPLPoQGC99X2Cy4kCq5"/>
+                        android:text="@string/public_user"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -113,12 +113,12 @@
 
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/toMine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:layout_gravity="center"
             android:textColor="#000000"
-            android:text="@string/key_confirm" />
+            android:text="确定" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

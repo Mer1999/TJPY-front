@@ -13,57 +13,28 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView17"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/order_out"
-            android:textColor="#4b0082"
-            android:padding="10dp"
-            android:textSize="25sp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/border_out"
-            android:orientation="horizontal">
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+
+                <TextView
+                    android:id="@+id/textView70"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/order1"
-                        android:textColor="#000000"
-                        android:padding="10dp"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/textView63"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/order_renting"
-                        android:textColor="#ff4500"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="交易信息" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -74,8 +45,9 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:background="@drawable/border"
+                        android:scaleType="centerCrop"
                         android:contentDescription="@string/image"
-                        android:src="@mipmap/basketball" />
+                        android:src="@mipmap/mouse" />
 
                     <TextView
                         android:id="@+id/textView15"
@@ -83,120 +55,241 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/border"
                         android:padding="10dp"
-                        android:text="@string/renttitle1"
+                        android:text="[嘉定校区]MicroSoft Sculpt 鼠标，黑色，八成新"
                         android:textColor="#000000"
                         android:textSize="16sp" />
 
                 </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView34"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border"
-                    android:text="@string/timesurplus"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/textView35"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="物品公钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="7qghi5ky4egpYabZRaJRbmFbbPYa7DYbii5U8c9LTWyw81nk4g"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border"
-                    android:text="@string/pubkey"
-                    android:textColor="#000000" />
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="物主公钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="3u3Qe85mi77UJ7hpZ3PrbZajzPsNVJ4M8t5ZEHcMgoCENL9gw"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="状态:"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:textColor="#ff0000"
+                        android:text="租赁中"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
 
+                        android:text="剩余时间："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="0 d 5 h"/>
+                </LinearLayout>
                 <Button
                     android:id="@+id/button13"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/order_return"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="立即归还"
                     android:textColor="#000000"
-                    android:background="@drawable/border_gray"
-                    android:textSize="20sp"/>
-
+                    android:textSize="15sp"/>
             </LinearLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:background="@drawable/border_out"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="190dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/border"
-                android:contentDescription="@string/image"
-                android:src="@mipmap/bike"
-                app:srcCompat="@mipmap/bike" />
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="交易信息" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:background="@drawable/border"
-                        android:text="@string/order2"
-                        android:textColor="#000000"
-                        android:layout_weight="1"
-                        android:textSize="15sp" />
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/image"
+                        android:src="@mipmap/bike" />
 
                     <TextView
-                        android:id="@+id/textView64"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/order_rentover"
+                        android:background="@drawable/border"
+                        android:padding="10dp"
+                        android:text="@string/renttitle3"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="物品公钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="64PHeEvKV26CE1opuPPnXeSsLi6EVeDFLkCVNMAnupV7SyWxZB"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="物主公钥："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
                         android:textSize="15sp"
-                        android:textColor="#2e8b57"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:textStyle="bold"
-                        android:layout_gravity="end"/>
+                        android:text="6ZsFkUyhtWRRGNJ6eY5YGaQSDpfcrSU9X1fnK19axAqtmivr91"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="状态:"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="已归还"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+
+                        android:text="归还时间："
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:textSize="15sp"
+                        android:text="2020.03.20"/>
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/border"
-                    android:text="@string/renttitle3"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="再次租赁"
                     android:textColor="#000000"
-                    android:padding="5dp"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView36"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border"
-                    android:text="@string/timesurplus2"
-                    android:textColor="#000000" />
-
-                <TextView
-                    android:id="@+id/textView37"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border"
-                    android:text="@string/pubkey2"
-                    android:textColor="#000000" />
+                    android:textSize="15sp" />
             </LinearLayout>
 
-        </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 </ScrollView>

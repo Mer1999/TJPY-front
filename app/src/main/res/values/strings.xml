@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">TJPY</string>
     <string name="title_home">大厅</string>
-    <string name="title_dashboard">仲裁</string>
-    <string name="title_notifications">订单</string>
-    <string name="title_mine">我的</string>
+    <string name="title_dashboard">众裁</string>
+    <string name="title_notifications">交易</string>
+    <string name="title_mine">用户</string>
 
     <string name="Working">施工中</string>
     <string name="plusicon">+</string>
@@ -21,6 +21,7 @@
     <string name="price4">0.1 T币 / 天</string>
     <string name="credit_best">用户信用等级&#160;|&#160;极好</string>
     <string name="credit_good">用户信用等级&#160;|&#160;良好</string>
+    <string name="public_user">7tNjnqN8tngaBnJRsdKXbBcKDV1tVCFgPLPoQGC99X2Cy4kCq5</string>
 
 
     <string name="tocheck_title">&#160;&#160;&#160;&#160;&#160;原帖</string>

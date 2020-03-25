@@ -106,7 +106,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="5dp"
-            android:scaleType="center"
+            android:scaleType="centerCrop"
             android:background="@android:color/black"
             android:src="@drawable/ic_photo_camera"
             android:layout_centerInParent="true"/>
