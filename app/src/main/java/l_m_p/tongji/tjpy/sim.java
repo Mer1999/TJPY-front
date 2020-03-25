@@ -100,7 +100,7 @@ public class sim extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent i=new Intent(sim.this,MainActivity.class);
+                Intent i=new Intent(sim.this,returnback.class);
                 startActivity(i);
             }
         });

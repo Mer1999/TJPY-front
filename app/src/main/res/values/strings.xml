@@ -120,6 +120,10 @@
     <string name="picsim_similarity">Similarity</string>
     <string name="picsim_before">BEFORE</string>
     <string name="picsim_after">AFTER</string>
-    <string name="picsim_next">下一步</string>
+    <string name="picsim_return">返回</string>
+    <string name="picsim_success">归还成功</string>
+    <string name="picsim_subtract">-0.2T币</string>
+    <string name="picsim_tb">T币余额：2.8T币</string>
+
 
 </resources>
